@@ -1,0 +1,55 @@
+.customContainer {
+    max-width: 1258px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+    padding-bottom: 45px;
+    padding-top: 45px;
+    margin-top: 10%;
+}
+.copyright {
+    font-size: 14px;
+    flex: 2;
+    float: left;
+}
+
+.brandName {
+    font-size: 24px;
+    font-weight: 800;
+    margin-right: 15px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+
+.socialMediaNav{
+    margin-right: -7px;
+    text-align: right;
+    flex: 2;
+    float: right;
+}
+
+.socialMediaIcons {
+    color: #aaa;
+    font-size: 28px;
+    padding: 0 5px;
+}
+
+@media (max-width: 767px){
+
+    .copyright {
+        display: none;
+    }
+    .socialMediaNav{
+        margin-right: -7px;
+        text-align: right;
+        flex: 2;
+        float: right;
+    }
+    .customContainer {
+        padding-bottom: 30px;
+        padding-top: 67px;
+        margin-top: 10%;
+    }
+}

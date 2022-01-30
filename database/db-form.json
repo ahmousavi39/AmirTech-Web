@@ -1,0 +1,28 @@
+{
+    "type": "podcast",
+    "path": "/podast/habit",
+    "title": "Habit Shift Read More",
+    "id": "habit",
+    "image": "https://images.unsplash.com/photo-1536340314100-5147a6eb2b41?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ",
+    "featured": true,
+    "feature_image": "https://images.unsplash.com/photo-1536340314100-5147a6eb2b41?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ",
+    "date": "11 January, 2022",
+    "time": "09:00",
+    "topic": "Habit",
+    "summary": "Arcu bibendum at varius vel pharetra vel turpis. Tempor orci eu lobortis elementum nibh tellus. Risus commodo viverra maecenas accumsan lacus vel facilisis. Eget duis at tellus at urna condimentum mattis. Adipiscing tristique risus nec feugiat in fermentum.",
+    "html": "<div>\n<h1>Writing posts with Ghost</h1>\n<p>THis is the body of post of the-editor</p>\n</div>",
+    "url": "https://amirtech.net/podast/habit",
+    "reading_time": 5,
+    "author": "Amir Hossain",
+    "tags": ["Habit", "Amirhossain", "Amir Hossain", "THE-EDITOR"],
+    "comments": [{
+        "id": 1,
+        "date": "2019-01-11T09:29:00.000+00:00",
+        "content": "nice!"
+    },
+    {
+        "id": 2,
+        "date": "2020-01-11T09:29:00.000+00:00",
+        "content": "great!"
+    }]
+}

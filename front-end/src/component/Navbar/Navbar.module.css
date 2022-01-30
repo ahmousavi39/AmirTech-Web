@@ -1,0 +1,83 @@
+@media (max-width: 991px) {    
+    #logoDivider{
+        display:none;
+    }
+    #mobile {
+        display:flex;
+    }
+    #desktop {
+        display:none;
+    }
+        
+}
+
+@media (min-width: 992px) {    
+    #desktop {
+        display:flex;
+    }
+    #mobile {
+        display:none;
+    }    
+}
+
+
+#mobile {
+    height: 100px;
+    align-items: center;
+}
+
+
+#logoDivider {
+    border-left: 2px groove #f1f1f1;
+    position: absolute;
+    margin: 0 15px;
+    height: 50%;
+    opacity: 0.3;
+}
+
+
+.navbar {
+    max-width: 1258px;
+    height: 100px;
+    align-items: center;
+    display: flex;
+}
+
+
+/* The Links Of Navbar */
+.navbarlink{
+    color: #aaa;
+    font-size: 15px;
+    font-weight: 800;
+    font-family: Mulish,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif; 
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.navbarlink:hover {
+    color: #1a1a1a;
+}
+
+
+.brandName {
+    font-size: 24px;
+    font-weight: 800;
+    margin-right: 15px;
+}
+
+
+.toggleIcon {
+    font-size: 13px; 
+    padding-left: 0;
+}
+
+.socialMediaIcons {
+    color: #1a1a1a;
+    margin: 3px;
+}
+
+.socialMediaIcons:hover {
+    color: #aaa;
+}

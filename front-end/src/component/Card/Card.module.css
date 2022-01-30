@@ -1,0 +1,146 @@
+@media (min-width: 992px) {    
+    .imageContainer {
+        width: 960px;
+        height: 480px;
+    }
+}
+
+@media (max-width: 991px) {   
+    .footer {
+        margin-bottom: 50px;
+    }
+}
+
+.image {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    box-sizing: inherit;
+    max-height: 480px;
+}
+
+.imageLink {
+    background-color : transparent;
+    text-decoration: none;
+    box-sizing: inherit;
+}
+
+.imageContainer {
+    background-color: #f1f1f1;
+    position: relative;
+    z-index: 10;
+    display: block;
+}
+
+.customContainer {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: calc(1140px + 8vw);
+    padding-left: 4vw;
+    padding-right: 4vw;
+    width: 100%;
+}
+
+.imageFigure {
+    margin-bottom: 45px;
+    max-width: 960px;
+    max-height: 480px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main {
+    margin-top: 3%;
+}
+
+.bodyContainer {
+    max-width: calc(750px + 8vw);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    width: 100%;
+}
+
+.postHeader {
+    margin-bottom: 30px;
+    display: block;
+}
+
+.postTitle {
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: -.01em;
+    margin-bottom: 10px;
+    color: #1a1a1a;
+    
+}
+
+.postTitleLink {
+    color: #1a1a1a;
+    text-decoration: none;
+}
+
+.postTitleLink:hover {
+    color: #49a8e4;
+}
+
+.postMeta {
+    color: #aaa;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: .3px;
+    text-transform: uppercase;    
+}
+
+.spreator::before {
+    content: "\02022";
+    padding: 0 4px;
+}
+
+.postBody {
+    margin-bottom: 30px;
+};
+
+.footer {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.postAction {
+    display: flex;
+    line-height: 1;
+    float: left;
+}
+
+.footerLink {
+    color: #49a8e4;
+    font-weight: 800;
+    align-items: center;
+    display: flex;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: .3px;
+    position: relative;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footerLink:hover {
+    color: #49a8e4;
+}
+
+.postAuthor {
+    align-items: center;
+    display: flex;
+    float: right;
+}
+
+.authorImage {
+    width: 30px;
+    padding-right: 5px;
+}
+

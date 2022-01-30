@@ -1,0 +1,280 @@
+[
+    {
+        "_id": {
+            "$oid": "61d7e16acaa0af92d198feab"
+        },
+        "type": "article",
+        "path": "/articles/the-editor/",
+        "title": "Writing posts with Ghost ✍️",
+        "id": "the-editor",
+        "image": "https://static.ghost.org/v3.0.0/images/writing-posts-with-ghost.png",
+        "featured": false,
+        "feature_image": "https://static.ghost.org/v3.0.0/images/writing-posts-with-ghost.png",
+        "date": "11 January, 2019",
+        "time": "23:34",
+        "topic": "Career",
+        "summary": "this is a small text | Arcu bibendum at varius vel pharetra vel turpis. Tempor orci eu lobortis elementum nibh tellus. Risus commodo viverra maecenas accumsan lacus vel facilisis. Eget duis at tellus at urna condimentum mattis. Adipiscing tristique risus nec feugiat in fermentum.",
+        "html": "<div>\n<h1>Writing posts with Ghost</h1>\n<p>THis is the body of post of the-editor</p>\n</div>",
+        "url": "https://gatsby.ghost.io/articles/the-editor/",
+        "reading_time": 3,
+        "author": "Amir Hossain, John",
+        "tags": [
+            "carrer",
+            "Amirhossain",
+            "Amir Hossain",
+            "THE-EDITOR"
+        ],
+        "comments": [
+            {
+                "id": 1,
+                "date": "2019-01-11T09:29:00.000+00:00",
+                "content": "nice!"
+            }
+        ]
+    },
+    {
+        "_id": {
+            "$oid": "61d7e16acaa0af92d198feac"
+        },
+        "type": "article",
+        "path": "/articles/see/",
+        "title": "The tittle SEE",
+        "id": "see",
+        "image": "https://assets.cdn.moviepilot.de/files/c894d654a6e5204a07445f2ae22d00342201906c18dbd0b398d07fc32397/limit/1024/2000/See_Unit_Photo_02.jpg",
+        "featured": true,
+        "feature_image": "https://assets.cdn.moviepilot.de/files/c894d654a6e5204a07445f2ae22d00342201906c18dbd0b398d07fc32397/limit/1024/2000/See_Unit_Photo_02.jpg",
+        "date": "11 January, 2011",
+        "time": "20:34",
+        "topic": "Movies",
+        "summary": "A summery of See film | Arcu bibendum at varius vel pharetra vel turpis. Tempor orci eu lobortis elementum nibh tellus. Risus commodo viverra maecenas accumsan lacus vel facilisis. Eget duis at tellus at urna condimentum mattis. Adipiscing tristique risus nec feugiat in fermentum.",
+        "html": "<div>\n<h1>See</h1>\n<p>It is a movie</p>\n</div>",
+        "url": "\nhttps://gatsby.ghost.io/articles/see/",
+        "reading_time": 2,
+        "author": "Amir Hossain",
+        "tags": [
+            "carrer",
+            "Amirhossain",
+            "See"
+        ],
+        "comments": [
+            {
+                "id": 1,
+                "date": "2019-01-11T09:29:00.000+00:00",
+                "content": "The WOrst!"
+            }
+        ]
+    },
+    {
+        "_id": {
+            "$oid": "61dbbbc769b5949a60b32de8"
+        },
+        "type": "podcast",
+        "path": "/podast/habit",
+        "title": "Habit Shift Read More",
+        "id": "habit",
+        "image": "https://images.unsplash.com/photo-1536340314100-5147a6eb2b41?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ",
+        "featured": true,
+        "feature_image": "https://images.unsplash.com/photo-1536340314100-5147a6eb2b41?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ",
+        "date": "11 January, 2022",
+        "time": "09:00",
+        "topic": "Habit",
+        "summary": "Arcu bibendum at varius vel pharetra vel turpis. Tempor orci eu lobortis elementum nibh tellus. Risus commodo viverra maecenas accumsan lacus vel facilisis. Eget duis at tellus at urna condimentum mattis. Adipiscing tristique risus nec feugiat in fermentum.",
+        "html": "<div>\n<h1>Writing posts with Ghost</h1>\n<p>THis is the body of post of the-editor</p>\n</div>",
+        "url": "https://amirtech.net/podast/habit",
+        "reading_time": 5,
+        "author": "Amir Hossain",
+        "tags": [
+            "Habit",
+            "Amirhossain",
+            "Amir Hossain",
+            "THE-EDITOR"
+        ],
+        "comments": [
+            {
+                "id": 1,
+                "date": "2019-01-11T09:29:00.000+00:00",
+                "content": "nice!"
+            },
+            {
+                "id": 2,
+                "date": "2020-01-11T09:29:00.000+00:00",
+                "content": "great!"
+            }
+        ]
+    },
+    {
+        "_id": {
+            "$oid": "61dbbbf969b5949a60b32de9"
+        },
+        "type": "course",
+        "path": "/courses/star-up",
+        "title": "Building a Market Model for Your Startup’s Product",
+        "id": "star-up",
+        "image": "https://images.unsplash.com/photo-1532620161677-a1ca7d5d530f?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ",
+        "featured": true,
+        "feature_image": "https://images.unsplash.com/photo-1532620161677-a1ca7d5d530f?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ",
+        "date": "11 January, 2005",
+        "time": "20:00",
+        "topic": "Start-up",
+        "summary": "Nunc scelerisque viverra mauris in aliquam sem fringilla. Volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque eleifend. Gravida quis blandit turpis cursus in hac habitasse platea dictumst. Facilisi morbi tempus iaculis urna id volutpat.",
+        "html": "<div>\n<h1>Writing posts with Ghost</h1>\n<p>THis is the body of post of the-editor</p>\n</div>",
+        "url": "https://amirtech.net/podast/habit",
+        "reading_time": 5,
+        "author": "Amir Hossain",
+        "tags": [
+            "Starup",
+            "Amirhossain",
+            "Amir Hossain",
+            "THE-EDITOR"
+        ],
+        "comments": [
+            {
+                "id": 1,
+                "date": "2019-01-11T09:29:00.000+00:00",
+                "content": "nice!"
+            },
+            {
+                "id": 2,
+                "date": "2020-01-11T09:29:00.000+00:00",
+                "content": "best!"
+            }
+        ]
+    },
+    {
+        "_id": {
+            "$oid": "61dbbc7b69b5949a60b32deb"
+        },
+        "type": "open-source-project",
+        "path": "/open-source-project/star-up",
+        "title": "Covid Media Website Code",
+        "id": "Covid-Media",
+        "image": "https://images.unsplash.com/photo-1532620161677-a1ca7d5d530f?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ",
+        "featured": true,
+        "feature_image": "https://images.unsplash.com/photo-1532620161677-a1ca7d5d530f?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ",
+        "date": "11 January, 2000",
+        "time": "20:50",
+        "topic": "Covid-Media",
+        "summary": "Pulvinar pellentesque habitant morbi tristique senectus. Purus faucibus ornare suspendisse sed nisi lacus. Lacus viverra vitae congue eu consequat. Morbi tristique senectus et netus et malesuada fames ac. Morbi leo urna molestie at elementum.",
+        "html": "<div>\n<h1>Writing posts with Ghost</h1>\n<p>THis is the body of post of the-editor</p>\n</div>",
+        "url": "https://amirtech.net/open-source-projects/covid-media",
+        "reading_time": 15,
+        "author": "Amir Hossain",
+        "tags": [
+            "Covid-Media",
+            "Amirhossain",
+            "Amir Hossain",
+            "THE-EDITOR"
+        ],
+        "comments": [
+            {
+                "id": 1,
+                "date": "2019-01-11T09:29:00.000+00:00",
+                "content": "Yes!"
+            },
+            {
+                "id": 2,
+                "date": "2020-01-11T09:29:00.000+00:00",
+                "content": "best!"
+            }
+        ]
+    },
+    {
+        "_id": {
+            "$oid": "61dbbc9269b5949a60b32dec"
+        },
+        "type": "podcast",
+        "path": "/podcasts/company/",
+        "title": "When Your Company Starts Growing...",
+        "id": "company",
+        "image": "https://images.unsplash.com/photo-1444653614773-995cb1ef9efa?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ",
+        "featured": false,
+        "feature_image": "https://images.unsplash.com/photo-1444653614773-995cb1ef9efa?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ",
+        "date": "11 June, 2012",
+        "time": "15:20",
+        "topic": "company",
+        "summary": "Ornare aenean euismod elementum nisi quis eleifend quam. Urna duis convallis convallis tellus id. Sit amet luctus venenatis lectus magna fringilla urna. Neque vitae tempus quam pellentesque nec nam aliquam. Volutpat diam ut venenatis tellus in.",
+        "html": "<div>\n<h1>Writing posts with Ghost</h1>\n<p>THis is the body of post of the-editor</p>\n</div>",
+        "url": "https://amirtech.net/podcasts/company",
+        "reading_time": 9,
+        "author": "Amir Hossain",
+        "tags": [
+            "company",
+            "Amirhossain",
+            "Amir Hossain",
+            "THE-EDITOR"
+        ],
+        "comments": [
+            {
+                "id": 1,
+                "date": "2019-05-11T10:39:00.000+00:00",
+                "content": "ahhh!"
+            }
+        ]
+    },
+    {
+        "_id": {
+            "$oid": "61dbbc9b69b5949a60b32ded"
+        },
+        "type": "course",
+        "path": "/courses/working/",
+        "title": "Working from Home",
+        "id": "working",
+        "image": "https://images.unsplash.com/photo-1524508762098-fd966ffb6ef9?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ",
+        "featured": false,
+        "feature_image": "https://images.unsplash.com/photo-1524508762098-fd966ffb6ef9?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ",
+        "date": "11 June, 2019",
+        "time": "16:20",
+        "topic": "working",
+        "summary": "Tempor commodo ullamcorper a lacus vestibulum sed. Tincidunt praesent semper feugiat nibh sed pulvinar proin gravida hendrerit. Amet dictum sit amet justo donec enim. Sapien eget mi proin sed libero enim. Montes nascetur ridiculus mus mauris vitae ultricies leo.",
+        "html": "<div>\n<h1>Writing posts with Ghost</h1>\n<p>THis is the body of post of the-editor</p>\n</div>",
+        "url": "https://amirtech.net/course/woking",
+        "reading_time": 90,
+        "author": "Amir Hossain",
+        "tags": [
+            "working",
+            "Amirhossain",
+            "Amir Hossain",
+            "THE-EDITOR"
+        ],
+        "comments": [
+            {
+                "id": 1,
+                "date": "2010-05-11T10:39:00.000+00:00",
+                "content": "yes!"
+            }
+        ]
+    },
+    {
+        "_id": {
+            "$oid": "61dbbcac69b5949a60b32dee"
+        },
+        "type": "open-source-project",
+        "path": "/open-source-projects/amirtech/",
+        "title": "How did I build amirtech",
+        "id": "amirtech",
+        "image": "https://images.unsplash.com/photo-1498075702571-ecb018f3752d?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ",
+        "featured": false,
+        "feature_image": "https://images.unsplash.com/photo-1498075702571-ecb018f3752d?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ",
+        "date": "11 June, 2015",
+        "time": "19:20",
+        "topic": "amirtech",
+        "summary": "Turpis nunc eget lorem dolor. Penatibus et magnis dis parturient montes nascetur. Magnis dis parturient montes nascetur ridiculus mus mauris vitae. Nisl pretium fusce id velit. Velit sed ullamcorper morbi tincidunt ornare massa eget egestas purus.",
+        "html": "<div>\n<h1>Writing posts with Ghost</h1>\n<p>THis is the body of post of the-editor</p>\n</div>",
+        "url": "https://amirtech.net/open-source-projects/amirtech",
+        "reading_time": 1,
+        "author": "Amir Hossain",
+        "tags": [
+            "amirtech",
+            "Amirhossain",
+            "Amir Hossain",
+            "THE-EDITOR"
+        ],
+        "comments": [
+            {
+                "id": 1,
+                "date": "2010-05-11T10:39:00.000+00:00",
+                "content": "NOO!"
+            }
+        ]
+    }
+]
