@@ -28,6 +28,17 @@ app.get('/api/all-posts', function (req, res) {
 })
 
 
+app.get('/api/post-comment', function (req, res) {
+    if (bcrypt.compareSync(process.env.API_PASSWORD, req.headers.pass)) {
+        console.log(req.headers.comment , req.headers.name);
+    } else {
+        res.send('Access Denied!')
+    }
+})
+
 app.listen(27019,'127.0.0.1', () => {
     console.log(`Example app listening at http://localhost:27019`)
 })
+
+
+

@@ -23,14 +23,12 @@ const Routing = () => {
 
   const getLocation = (data) => {
     setLocation(data);
-    console.log(location);
   };
 
 
   return (
     <Router>
       <header className="custom-container"><NavbarCom getLocation={e => getLocation(e)} /></header>
-      <PostPage data={data}/>
       <TransitionGroup component={null}>
         <CSSTransition key={location.key} timeout={300} classNames="alert">
           <Routes location={location}>
@@ -39,6 +37,9 @@ const Routing = () => {
             <Route path="/podcasts" element={<Podcasts data={data} />} />
             <Route path="/courses" element={<Courses data={data} />} />
             <Route path="/open-source-projects" element={<OpenSourceProjects data={data} />} />
+            {data.map((item, index) => {
+              return <Route key={index} path={item.path} element={<PostPage data={data} />} />
+            })}
           </Routes>
         </CSSTransition>
       </TransitionGroup>

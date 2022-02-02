@@ -8,6 +8,8 @@
         "title": "Writing posts with Ghost ✍️",
         "id": "the-editor",
         "image": "https://static.ghost.org/v3.0.0/images/writing-posts-with-ghost.png",
+        "video": "https://www.youtube.com/watch?v=l7Ua8rvIZXg",
+        "voice": "",
         "featured": false,
         "feature_image": "https://static.ghost.org/v3.0.0/images/writing-posts-with-ghost.png",
         "date": "11 January, 2019",
@@ -27,8 +29,10 @@
         "comments": [
             {
                 "id": 1,
-                "date": "2019-01-11T09:29:00.000+00:00",
-                "content": "nice!"
+                "date": "11 January, 2019",
+                "time": "13:22",
+                "content": "nice!",
+                "author": "John"
             }
         ]
     },
@@ -59,8 +63,10 @@
         "comments": [
             {
                 "id": 1,
-                "date": "2019-01-11T09:29:00.000+00:00",
-                "content": "The WOrst!"
+                "date": "11 January, 2019",
+                "time": "13:22",
+                "content": "The WOrst!",
+                "author": "John"
             }
         ]
     },
@@ -92,13 +98,17 @@
         "comments": [
             {
                 "id": 1,
-                "date": "2019-01-11T09:29:00.000+00:00",
-                "content": "nice!"
+                "date": "11 January, 2019",
+                "time": "13:22",
+                "content": "nice!",
+                "author": "John"
             },
             {
                 "id": 2,
-                "date": "2020-01-11T09:29:00.000+00:00",
-                "content": "great!"
+                "date": "11 January, 2019",
+                "time": "13:22",
+                "content": "great!",
+                "author": "John"
             }
         ]
     },
@@ -130,13 +140,17 @@
         "comments": [
             {
                 "id": 1,
-                "date": "2019-01-11T09:29:00.000+00:00",
-                "content": "nice!"
+                "date": "11 January, 2019",
+                "time": "13:22",
+                "content": "nice!",
+                "author": "John"
             },
             {
                 "id": 2,
-                "date": "2020-01-11T09:29:00.000+00:00",
-                "content": "best!"
+                "date": "11 January, 2019",
+                "time": "13:22",
+                "content": "best!",
+                "author": "John"
             }
         ]
     },
@@ -168,13 +182,17 @@
         "comments": [
             {
                 "id": 1,
-                "date": "2019-01-11T09:29:00.000+00:00",
-                "content": "Yes!"
+                "date": "11 January, 2019",
+                "time": "13:22",
+                "content": "Yes!",
+                "author": "John"
             },
             {
                 "id": 2,
-                "date": "2020-01-11T09:29:00.000+00:00",
-                "content": "best!"
+                "date": "11 January, 2019",
+                "time": "13:22",
+                "content": "best!",
+                "author": "John"
             }
         ]
     },
@@ -206,8 +224,10 @@
         "comments": [
             {
                 "id": 1,
-                "date": "2019-05-11T10:39:00.000+00:00",
-                "content": "ahhh!"
+                "date": "11 January, 2019",
+                "time": "13:22",
+                "content": "ahhh!",
+                "author": "John"
             }
         ]
     },
@@ -239,8 +259,10 @@
         "comments": [
             {
                 "id": 1,
-                "date": "2010-05-11T10:39:00.000+00:00",
-                "content": "yes!"
+                "date": "11 January, 2019",
+                "time": "13:22",
+                "content": "yes!",
+                "author": "John"
             }
         ]
     },
@@ -272,8 +294,10 @@
         "comments": [
             {
                 "id": 1,
-                "date": "2010-05-11T10:39:00.000+00:00",
-                "content": "NOO!"
+                "date": "11 January, 2019",
+                "time": "13:22",
+                "content": "NOO!",
+                "author": "John"
             }
         ]
     }

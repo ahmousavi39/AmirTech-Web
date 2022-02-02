@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Footer.module.css';
 import { BsLinkedin, BsInstagram, BsTwitter, BsYoutube } from "react-icons/bs"
 
-export const FooterCom = () => {
+const FooterCom = () => {
     return (
         <div className={styles.customContainer}>
             <div className={styles.copyright}>Developed by Amir Hossain</div>

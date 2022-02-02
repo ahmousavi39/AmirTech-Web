@@ -1,19 +1,23 @@
 import React from 'react';
 import styles from './Card.module.css';
 import { BsPlayFill } from "react-icons/bs";
+import { Link } from "react-router-dom";
 import Amir from '../../assets/Amir Hossain.png';
-
 
 const CardCom = (props) => {
     return (
         <div className={styles.main}>
             <figure className={styles.imageFigure}>
-                <div className={styles.imageContainer}><a href={props.post.path} className={styles.imageLink}><img alt={props.post.title} src={props.post.image} key={props.index} className={styles.image}/></a></div>
+                <div className={styles.imageContainer}><Link to={props.post.path} className={styles.imageLink}>
+                    {props.post.video !== undefined ? 
+                    <iframe key={props.index} className={styles.video} src={props.post.video} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen title={props.post.title} />
+                    : <img alt={props.post.title} src={props.post.image} key={props.index} className={styles.image} />}
+                </Link></div>
             </figure>
 
             <div className={styles.bodyContainer}>
                 <header className={styles.postHeader}>
-                    <h2 className={styles.postTitle}><a className={styles.postTitleLink} href={props.post.path}>{props.post.title}</a></h2>
+                    <h2 className={styles.postTitle}><Link className={styles.postTitleLink} to={props.post.path}>{props.post.title}</Link></h2>
                     <div className={styles.postMeta}><span>{props.generatedDate}</span><span className={styles.spreator}>{props.post.reading_time}min to read</span><span className={styles.spreator}>{props.post.topic}</span></div>
                 </header>
 
@@ -25,7 +29,7 @@ const CardCom = (props) => {
 
                 <footer className={styles.footer} style={{ paddingBottom: '10%' }}>
                     <div className={styles.postAction}>
-                        <a className={styles.footerLink} href={props.post.path}><BsPlayFill size={17} />read now</a>
+                        <Link to={props.post.path} className={styles.footerLink} href={props.post.path}><BsPlayFill size={17} />{props.post.type === 'article' ? "read now" : props.post.type === 'podcast' ? "Listen now" : props.post.type === "open-source-project" ? "Have a look" : props.post.type === "course" ? "Learn more" : "read more"}</Link>
                     </div>
                     <div className={styles.postAuthor}>
                         <img src={Amir} className={styles.authorImage}></img>

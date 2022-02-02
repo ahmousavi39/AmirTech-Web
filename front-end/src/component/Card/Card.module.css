@@ -3,16 +3,30 @@
         width: 960px;
         height: 480px;
     }
+    .video {
+        height: 100%;
+    }
 }
 
 @media (max-width: 991px) {   
     .footer {
         margin-bottom: 50px;
     }
+    .video {
+        height: 380px;
+    }
+
 }
 
 .image {
     height: 100%;
+    object-fit: cover;
+    width: 100%;
+    box-sizing: inherit;
+    max-height: 480px;
+}
+
+.video {
     object-fit: cover;
     width: 100%;
     box-sizing: inherit;

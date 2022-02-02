@@ -5,6 +5,7 @@
     padding-left: 4vw;
     padding-right: 4vw;
     width: 100%;
+    margin-top: 3%;
 }
 
 .loader {
@@ -45,6 +46,12 @@
 }
 
 
+.footer {
+    padding-bottom: 10%;
+    margin-top: 30px;
+}
+
+
 .image {
     height: 100%;
     object-fit: cover;
@@ -69,9 +76,6 @@
     margin-right: auto;
 }
 
-.main {
-    margin-top: 3%;
-}
 
 .bodyContainer {
     max-width: calc(750px + 8vw);
@@ -83,8 +87,9 @@
 }
 
 .postHeader {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     display: block;
+    text-align: center;
 }
 
 .postTitle {
@@ -93,6 +98,7 @@
     letter-spacing: -.01em;
     margin-bottom: 10px;
     color: #1a1a1a;
+    padding-bottom: 10px;
 }
 
 .postMeta {
@@ -105,9 +111,48 @@
 
 .spreator::before {
     content: "\02022";
-    padding: 0 4px;
+    padding: 09px;
 }
 
 .postBody {
     margin-bottom: 30px;
 };
+
+.postTitleLink {
+    color: #1a1a1a;
+    text-decoration: none;
+}
+
+.postTitleLink:hover {
+    color: #49a8e4;
+}
+
+.bodyContainer {
+    max-width: calc(750px + 8vw);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    width: 100%;
+}
+
+.iconShare {
+    padding: 4px;
+}
+
+
+.commentMeta {
+    color: #aaa;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: .3px;
+    text-transform: uppercase;    
+}
+
+.commentTitle {
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: -.01em;
+    margin-bottom: 10px;
+    color: #1a1a1a;
+}

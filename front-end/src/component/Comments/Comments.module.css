@@ -1,0 +1,44 @@
+.commentMeta {
+    color: #aaa;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: .3px;
+    text-transform: uppercase;    
+}
+
+.commentTitle {
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: -.01em;
+    margin-bottom: 10px;
+    color: #1a1a1a;
+}
+
+
+.bodyContainer {
+    max-width: calc(750px + 8vw);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    width: 100%;
+}
+
+.postComment {
+    margin-bottom: 40px;
+}
+
+.postAction {
+    display: flex;
+    line-height: 1;
+    margin-top: 10px;
+}
+
+.postButton:hover {
+    background-color: #49a8e4;
+}
+
+.postButton {
+    padding-right: 50px;
+    padding-left: 50px;
+}
