@@ -4,12 +4,16 @@ import { FloatingLabel, Form, Button } from 'react-bootstrap';
 import { postComment } from '../../API';
 
 const CommentsCom = (props) => {
+    let lastCommentID = 0;
+
     const postCommentCall = () => {
         const name = document.getElementsByTagName('input')[0].value;
         const comment = document.getElementsByTagName('textarea')[0].value;
+        const postId = props.post.id;
+
         if (name.length > 1) {
             if (comment.length > 1) {
-                postComment({name: name, comment: comment})
+                postComment({name: name, comment: comment, postId: postId, lastCommentId: lastCommentID});
             } else {
                 alert('Please enter your comment!');
             }
@@ -40,7 +44,11 @@ const CommentsCom = (props) => {
                 </div>
             </section>
             <section className={styles.bodyContainer}>
-                {props.comments.map((item, index) => (
+                {props.post.comments.map((item, index) => {
+                    if(item.id > lastCommentID){
+                        lastCommentID++
+                    }
+                    return (
                     <div style={{ marginBottom: "30px" }} key={index}>
                         {index > 0 ? <hr /> : <></>}
                         <h5 className={styles.commentTitle}>{item.author}</h5>
@@ -48,7 +56,7 @@ const CommentsCom = (props) => {
                         <p>{item.content}</p>
                     </div>
 
-                ))}
+                )})}
             </section>
         </div>
     )

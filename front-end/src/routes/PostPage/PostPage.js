@@ -129,7 +129,7 @@ export const PostPage = (props) => {
                                     </TelegramShareButton>
                                 </footer>
 
-                                <CommentsCom comments={post.comments} />
+                                <CommentsCom post={post} />
                             </div>
                         </div >
                     )

@@ -13,7 +13,7 @@ export async function getData() {
 };
 
 export async function postComment(props) {
-    await axios.get(process.env.REACT_APP_POST_URL, { headers: { "pass": process.env.REACT_APP_DB_PASSWORD, name : props.name, comment : props.comment } })
+    await axios.get(process.env.REACT_APP_POST_URL, { headers: { "pass": process.env.REACT_APP_DB_PASSWORD, name : props.name, comment : props.comment, id: props.postId, lastCommentId: props.lastCommentId } })
         .then(response => {
             console.log(response);
         })
