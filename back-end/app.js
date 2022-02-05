@@ -38,7 +38,7 @@ app.get('/api/all-posts', function (req, res) {
 
 app.get('/api/post-comment', function (req, res) {
     if (bcrypt.compareSync(process.env.API_PASSWORD, req.headers.pass)) {
-        console.log(req.headers.comment, req.headers.name, req.headers.id, req.headers.lastCommentId);
+        console.log(req.headers.lastCommentId, req.headers.comment, req.headers.name, req.headers.id);
     } else {
         res.send('Access Denied!')
     }

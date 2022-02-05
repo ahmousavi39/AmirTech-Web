@@ -1,10 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styles from './Comments.module.css';
 import { FloatingLabel, Form, Button } from 'react-bootstrap';
 import { postComment } from '../../API';
 
 const CommentsCom = (props) => {
-    let lastCommentID = 0;
+    const [lastCommentId, setLastCommentId] = useState(0);
 
     const postCommentCall = () => {
         const name = document.getElementsByTagName('input')[0].value;
@@ -13,7 +13,7 @@ const CommentsCom = (props) => {
 
         if (name.length > 1) {
             if (comment.length > 1) {
-                postComment({name: name, comment: comment, postId: postId, lastCommentId: lastCommentID});
+                postComment({name: name, comment: comment, postId: postId, lastCommentId: lastCommentId});
             } else {
                 alert('Please enter your comment!');
             }
@@ -45,8 +45,8 @@ const CommentsCom = (props) => {
             </section>
             <section className={styles.bodyContainer}>
                 {props.post.comments.map((item, index) => {
-                    if(item.id > lastCommentID){
-                        lastCommentID++
+                    if(item.id > lastCommentId){
+                        setLastCommentId(lastCommentId + 1);
                     }
                     return (
                     <div style={{ marginBottom: "30px" }} key={index}>
