@@ -1,4 +1,3 @@
-code . && exit
-cd back-end && node app.js
+code . && cd back-end && node app.js
 cd database && mongod -f mongod.cfg
 cd front-end && npm start

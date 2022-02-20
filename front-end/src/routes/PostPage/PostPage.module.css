@@ -1,3 +1,20 @@
+@media (min-width: 992px) {    
+    .imageContainer {
+        width: 960px;
+        height: 480px;
+    }
+    .video {
+        height: 100%;
+    }
+}
+
+@media (max-width: 991px) {   
+    .video {
+        height: 380px;
+    }
+
+}
+
 .customContainer {
     margin-left: auto;
     margin-right: auto;
@@ -155,4 +172,11 @@
     letter-spacing: -.01em;
     margin-bottom: 10px;
     color: #1a1a1a;
+}
+
+.video {
+    object-fit: cover;
+    width: 100%;
+    box-sizing: inherit;
+    max-height: 480px;
 }

@@ -4,3 +4,4 @@ export { Courses } from './Courses/Courses';
 export { OpenSourceProjects } from './OpenSourceProjects/OpenSourceProjects';
 export { Podcasts } from './Podcasts/Podcasts';
 export { PostPage } from './PostPage/PostPage';
+export { Admin } from './Admin/Admin';

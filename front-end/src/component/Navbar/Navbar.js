@@ -7,11 +7,16 @@ import { Link, useLocation } from "react-router-dom";
 
 
 const NavbarCom = (props) => {
+
     let currentWidth = window.innerWidth;
     let location = useLocation();
     window.addEventListener("resize", function () {
         currentWidth = window.innerWidth;
     });
+
+    function close() {
+        document.getElementsByClassName("btn-close")[0].click();
+    };
 
     useEffect(() => {
         const renderLocation = e => {
@@ -35,7 +40,7 @@ const NavbarCom = (props) => {
                             navbarScroll
                         >
                             <Link className={styles.navbarlink} to="/">Home</Link>
-                            <Link className={styles.navbarlink} to='/articles'>Articles</Link>
+                            <Link className={styles.navbarlink} to="/articles">Articles</Link>
                             <Link className={styles.navbarlink} to="/podcasts">Podcasts</Link>
                             <Link className={styles.navbarlink} to="/courses">Courses</Link>
                             <Link className={styles.navbarlink} to="/open-source-projects">Open-Source-Projects</Link>
@@ -73,11 +78,11 @@ const NavbarCom = (props) => {
                         </Offcanvas.Header>
                         <Offcanvas.Body>
                             <Nav className="justify-content-end flex-grow-1">
-                                <Link className={styles.navbarlink} to="/">Home</Link>
-                                <Link className={styles.navbarlink} to="/articles">Articles</Link>
-                                <Link className={styles.navbarlink} to="/podcasts">Podcasts</Link>
-                                <Link className={styles.navbarlink} to="/courses">Courses</Link>
-                                <Link className={styles.navbarlink} to="/open-source-projects">Open-Source-Projects</Link>
+                                <Link className={styles.navbarlink} onClick={close} to="/">Home</Link>
+                                <Link className={styles.navbarlink} onClick={close} to="/articles">Articles</Link>
+                                <Link className={styles.navbarlink} onClick={close} to="/podcasts">Podcasts</Link>
+                                <Link className={styles.navbarlink} onClick={close} to="/courses">Courses</Link>
+                                <Link className={styles.navbarlink} onClick={close} to="/open-source-projects">Open-Source-Projects</Link>
                             </Nav>
                         </Offcanvas.Body>
                     </Navbar.Offcanvas>

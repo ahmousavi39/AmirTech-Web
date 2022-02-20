@@ -5,15 +5,33 @@ import { postComment } from '../../API';
 
 const CommentsCom = (props) => {
     const [lastCommentId, setLastCommentId] = useState(0);
-
+    const [commentsData, setCommentsData] = useState(props.post.comments);
+    
     const postCommentCall = () => {
         const name = document.getElementsByTagName('input')[0].value;
         const comment = document.getElementsByTagName('textarea')[0].value;
         const postId = props.post.id;
 
+        // Empting input value
+        document.getElementsByTagName('input')[0].value = '';
+        document.getElementsByTagName('textarea')[0].value = '';
+
+        // Getting the date
+        const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        let date_ob = new Date();
+        let minutes = date_ob.getMinutes();
+        let hours = date_ob.getHours();
+        let date = ("0" + date_ob.getDate()).slice(-2);
+        let month = monthNames[("0" + (date_ob.getMonth() + 1)).slice(-2) - 1];
+        let year = date_ob.getFullYear();
+
         if (name.length > 1) {
             if (comment.length > 1) {
                 postComment({name: name, comment: comment, postId: postId, lastCommentId: lastCommentId});
+                alert('Thanks for your valuable comment ' + name + ' !');
+
+                setCommentsData([...commentsData, { "id": parseInt(lastCommentId) + 1 , "date": date + ' ' + month + ', ' + year, "time": hours + ':' + minutes, "content": comment, "author": name }]);
+                console.log(commentsData);
             } else {
                 alert('Please enter your comment!');
             }
@@ -44,7 +62,7 @@ const CommentsCom = (props) => {
                 </div>
             </section>
             <section className={styles.bodyContainer}>
-                {props.post.comments.map((item, index) => {
+                {commentsData.map((item, index) => {
                     if(item.id > lastCommentId){
                         setLastCommentId(lastCommentId + 1);
                     }
@@ -52,7 +70,7 @@ const CommentsCom = (props) => {
                     <div style={{ marginBottom: "30px" }} key={index}>
                         {index > 0 ? <hr /> : <></>}
                         <h5 className={styles.commentTitle}>{item.author}</h5>
-                        <div className={styles.commentMeta}><span>{item.date}</span><span className={styles.spreator}>{item.time}</span></div>
+                        <div className={styles.commentMeta}><span>{item.date}</span> | <span className={styles.spreator}>{item.time}</span></div>
                         <p>{item.content}</p>
                     </div>
 

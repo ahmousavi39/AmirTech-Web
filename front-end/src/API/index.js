@@ -13,7 +13,40 @@ export async function getData() {
 };
 
 export async function postComment(props) {
-    await axios.get(process.env.REACT_APP_POST_URL, { headers: { "pass": process.env.REACT_APP_DB_PASSWORD, lastCommentId: props.lastCommentId, name : props.name, comment : props.comment, id: props.postId } })
+    await axios.get(process.env.REACT_APP_POST_COMMENT_URL, { headers: { "pass": process.env.REACT_APP_DB_PASSWORD, lastcommentid: props.lastCommentId, name: props.name, comment: props.comment, id: props.postId } })
+        .then(response => {
+            console.log(response);
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
+
+    return;
+};
+
+
+export async function postPost(props) {
+    await axios.get(process.env.REACT_APP_POST_POST_URL, {
+        headers: {
+            "pass": process.env.REACT_APP_DB_PASSWORD, 
+            "id": props.id,
+            "type": props.type,
+            "title": props.title,
+            "image": props.image,
+            "video": props.video,
+            "featured": props.featured,
+            "featured_image": props.featured_image,
+            "topic": props.topic,
+            "summary": props.summary,
+            "html": props.html,
+            "path": props.path,
+            "reading_time": props.reading_time,
+            "author": props.author,
+            "tags": props.tags,
+            "url": props.url,
+            "secret_pass": props.secret_pass
+        }
+    })
         .then(response => {
             console.log(response);
         })

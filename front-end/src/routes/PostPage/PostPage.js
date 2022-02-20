@@ -62,8 +62,16 @@ export const PostPage = (props) => {
                                 <h2 className={styles.postTitle}>{post.title}</h2>
                                 <div className={styles.postMeta}><span>{GeneratedDateReady}</span><span className={styles.spreator}>{post.reading_time}min to read</span><span className={styles.spreator}>{post.topic}</span></div>
                             </header>
-                            <figure className={styles.imageFigure}>
+                            {/* <figure className={styles.imageFigure}>
                                 <div className={styles.imageContainer}><img alt={post.title} src={post.image} key={index} className={styles.image} /></div>
+                            </figure> */}
+
+                            <figure className={styles.imageFigure}>
+                                <div className={styles.imageContainer}>
+                                    {post.video !== undefined ?
+                                        <iframe className={styles.video} src={post.video} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title={post.title} />
+                                        : <img alt={post.title} src={post.image} key={post.index} className={styles.image} />}
+                                </div>
                             </figure>
 
                             <div className={styles.bodyContainer}>
