@@ -39,7 +39,7 @@ const Routing = () => {
             <Route path="/open-source-projects" element={<OpenSourceProjects data={data} />} />
             <Route path={process.env.REACT_APP_ADMIN_URL} element={<Admin />} />
             {data.map((item, index) => {
-              return <Route key={index} path={item.path} element={<PostPage data={data} />} />
+              return <Route key={index} path={item.path} element={<PostPage data={data} adminPannel={false} />} />
             })}
           </Routes>
         </CSSTransition>

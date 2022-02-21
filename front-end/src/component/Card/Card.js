@@ -9,7 +9,7 @@ const CardCom = (props) => {
         <div className={styles.main}>
             <figure className={styles.imageFigure}>
                 <div className={styles.imageContainer}><Link to={props.post.path} className={styles.imageLink}>
-                    {props.post.video !== undefined ?
+                    {props.post.video !== undefined && props.post.video.length > 4 ?
                         <iframe key={props.index} className={styles.video} src={props.post.video} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen title={props.post.title} />
                         : <img alt={props.post.title} src={props.post.image} key={props.index} className={styles.image} />}
                 </Link></div>
