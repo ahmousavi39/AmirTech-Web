@@ -37,17 +37,28 @@ export const PostPage = (props) => {
         let d2 = dayjs(dPast);
         let m = Math.round(d1.diff(d2, 'month', true));
         let y = Math.floor(m / 12);
-        if (y === 0) {
-            return `${m} months ago`;
-        }
-        else {
-            m = m % 12;
-            if (m === 0) {
-                return `${y} years ago`;
+
+        const dateInShortFormat = new Date(date).toLocaleDateString('en-US');
+        const diffTime = Math.abs(new Date(dateInShortFormat) - new Date(new Date().toLocaleDateString('en-US')));
+        const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+
+        if (diffDays > 329) {
+            if (y === 0) {
+                return `${m} months ago`;
             }
             else {
-                return `${y} years, ${m} months ago`;
+                m = m % 12;
+                if (m === 0) {
+                    return `${y} years ago`;
+                }
+                else {
+                    return `${y} years, ${m} months ago`;
+                }
             }
+        } else if (diffDays == 0) {
+            return 'today';
+        } else {
+            return `${diffDays} days ago`;
         }
     }
 

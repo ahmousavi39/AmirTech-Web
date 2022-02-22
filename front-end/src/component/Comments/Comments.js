@@ -31,7 +31,6 @@ const CommentsCom = (props) => {
                 alert('Thanks for your valuable comment ' + name + ' !');
 
                 setCommentsData([...commentsData, { "id": parseInt(lastCommentId) + 1 , "date": date + ' ' + month + ', ' + year, "time": hours + ':' + minutes, "content": comment, "author": name }]);
-                console.log(commentsData);
             } else {
                 alert('Please enter your comment!');
             }

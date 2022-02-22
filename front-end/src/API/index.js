@@ -14,13 +14,9 @@ export async function getData() {
 
 export async function postComment(props) {
     await axios.get(process.env.REACT_APP_POST_COMMENT_URL, { headers: { "pass": process.env.REACT_APP_DB_PASSWORD, lastcommentid: props.lastCommentId, name: props.name, comment: props.comment, id: props.postId } })
-        .then(response => {
-            console.log(response);
-        })
         .catch(function (error) {
-            console.log(error);
+            alert("Sorry, We couldn't post your comment, if is possible please report is to: a.h.mousavi39@gmail.com")
         });
-
     return;
 };
 
@@ -48,10 +44,10 @@ export async function postPost(props) {
         }
     })
         .then(response => {
-            console.log(response);
+            alert('posted')
         })
         .catch(function (error) {
-            console.log(error);
+            alert('didnt posted')
         });
 
     return;
